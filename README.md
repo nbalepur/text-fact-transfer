@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ```
 ## Functional Design
 
-The `data` folder contains the data needed to train the specificity-aware QA model, as well as the text fact transfer datasets
+The `data` folder contains the data needed to train the specificity-aware QA model, as well as the text fact transfer datasets. The t-rex dataset already has the corpora as part of the dataset, but the other corpora need to be collected. To collect the corpora for the expository text generation datasets (U.S. News and Medline), you can follow the instructions [here](https://github.com/nbalepur/expository-text-generation/). The code to obtain the corpora for the Google dataset can be found at `/data/scrape_web.py` 
 
 The `model` folder contains the scripts necessary for training the components of ModQGA and running the model. The code should be run in the following order:
 
