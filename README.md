@@ -1,9 +1,8 @@
 # Text Fact Transfer
-ModQGA Framework described in the Text Fact Transfer Paper
 
 ## Overview
 
-This repository corresponds to code for the paper "Text Fact Transfer".
+This repository corresponds to code for the EMNLP 2023 paper "Text Fact Transfer".
 
 ## Setup
 
@@ -22,4 +21,4 @@ The `model` folder contains the scripts necessary for training the components of
 
 The `evaluate` folder contains the scripts to evaluate the generated text. The folder is organized as follows:
 * `evaluate/nli_eval.py`: Run the "Natural Language Inference - Entailment" metric
-* `evaluate/output_similarity_eval.py`: Run the output similarity metrics, including ROUGE, BLEU, METEOR, BERTScore, and Halluc
+* `evaluate/output_similarity_eval.py`: Run the output similarity metrics
