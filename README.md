@@ -1,8 +1,12 @@
 # Text Fact Transfer
 
+This repository corresponds to code for the EMNLP 2023 paper "Text Fact Transfer".
+
+![ModQGA](images/ModQGA.png)
+
 ## Overview
 
-This repository corresponds to code for the EMNLP 2023 paper "Text Fact Transfer".
+Below are the instructions for running ModQGA, the model introduces in our paper "Text Fact Transfer"
 
 ## Setup
 
