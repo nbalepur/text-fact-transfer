@@ -12,12 +12,14 @@ pip install -r requirements.txt
 ```
 ## Functional Design
 
+The `data` folder contains the data needed to train the specificity-aware QA model, as well as the text fact transfer datasets
+
 The `model` folder contains the scripts necessary for training the components of ModQGA and running the model. The folder is organized as follows:
 * `model/ModQGA.py`: Inference script for running ModQGA model and extracting transferred entities
-* `model/seq2seq.py`: Replacement model that is run after extracting transferred entities for 0-shot ModQGA
-* `model/zero_shot.py`: LED model that is run after extracting transferred entities for ModQGA-Sup
-* `model/Question Answering.ipynb`: Jupyter notebook to train the specificity-aware question answering model.
-* `model/Question Generation.ipynb`: Jupyter notebook to train the end-to-end question generation model.
+* `model/zero_shot.py`: After running `ModQGA.py`, this code will generate text in a 0-shot fashion
+* `model/zero_shot.py`: After running `ModQGA.py`, this code will generate text in a supervised manner by training the LED language model
+* `model/Question Answering.ipynb`: Jupyter notebook to train the specificity-aware question answering model
+* `model/Question Generation.ipynb`: Jupyter notebook to train the end-to-end question generation model
 
 The `evaluate` folder contains the scripts to evaluate the generated text. The folder is organized as follows:
 * `evaluate/nli_eval.py`: Run the "Natural Language Inference - Entailment" metric
