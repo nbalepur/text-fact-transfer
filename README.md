@@ -25,3 +25,4 @@ The `model` folder contains the scripts necessary for training the components of
 The `evaluate` folder contains the scripts to evaluate the generated text. The folder is organized as follows:
 * `evaluate/nli_eval.py`: Run the "Natural Language Inference - Entailment" metric
 * `evaluate/output_similarity_eval.py`: Run the output similarity metrics
+FactCC can be calculated by following the instructions [here](https://github.com/salesforce/factCC).
